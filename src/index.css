@@ -1,0 +1,22 @@
+.full-world {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-world {
+  display: flex;
+}
+
+.alive {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  margin: 1px;
+}
+
+.death {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  margin: 1px;
+}
