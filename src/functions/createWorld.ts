@@ -1,9 +1,9 @@
-export default function createWorld(x: number, y: number): string[][] {
-  const outerArr: string[][] = [];
+export default function createWorld(x: number, y: number): number[][] {
+  const outerArr: number[][] = [];
   for (let i = 0; i < y; i++) {
-    const innerArr: string[] = [];
+    const innerArr: number[] = [];
     for (let j = 0; j < x; j++) {
-      innerArr.push("death");
+      innerArr.push(0);
     }
     outerArr.push(innerArr);
   }

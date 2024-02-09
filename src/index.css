@@ -7,16 +7,46 @@
   display: flex;
 }
 
-.alive {
+.cell {
   width: 20px;
   height: 20px;
-  background-color: green;
   margin: 1px;
 }
+.color-1 {
+  background-color: #ff0000; /* Red */
+}
 
+.color-2 {
+  background-color: #cc0000; /* Darker red */
+}
+
+.color-3 {
+  background-color: #990000; /* Even darker red */
+}
+
+.color-4 {
+  background-color: #660000; /* Darker red */
+}
+
+.color-5 {
+  background-color: #330000; /* Darker red */
+}
+
+.color-6 {
+  background-color: #0000ff; /* Blue */
+}
+
+.color-7 {
+  background-color: #000099; /* Darker blue */
+}
+
+.color-8 {
+  background-color: #000066; /* Even darker blue */
+}
+
+.color-9 {
+  background-color: #000033; /* Even darker blue */
+}
 .death {
-  width: 20px;
-  height: 20px;
-  background-color: red;
-  margin: 1px;
+  background-color: lightgrey;
 }

@@ -8,7 +8,7 @@ import Dashboard from "./Components/Dashboard";
 type Stage = { xAxis: number; yAxis: number; tickTime: number };
 
 function App() {
-  const [world, setWorld] = useState<string[][] | null>(null);
+  const [world, setWorld] = useState<number[][] | null>(null);
   const [isRunning, setIsRunning] = useState(false);
   const [stage, setStage] = useState<Stage>({
     xAxis: 10,
@@ -22,7 +22,7 @@ function App() {
     if (!world || !world[y]) return;
 
     const newWorld = [...world];
-    const toggleStatus = world[y][x] === "death" ? "alive" : "death";
+    const toggleStatus = world[y][x] === 0 ? 1 : 0;
 
     newWorld[y][x] = toggleStatus;
     setWorld(newWorld);
@@ -32,6 +32,7 @@ function App() {
     if (!world) {
       const emptyWorld = createWorld(xAxis, yAxis);
       setWorld(emptyWorld);
+      console.log(emptyWorld);
     } else {
       const updatedWorld = createWorld(xAxis, yAxis);
       setWorld(updatedWorld);

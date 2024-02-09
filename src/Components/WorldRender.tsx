@@ -1,7 +1,7 @@
 import Dot from "./Dot";
 
 type Props = {
-  world: string[][];
+  world: number[][];
   godMode: (x: number, y: number) => void;
 };
 
