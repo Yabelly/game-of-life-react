@@ -11,6 +11,9 @@ const Dot: FC<props> = ({ organism, x, y, godMode }) => {
   let renderOrganism: string;
 
   switch (organism) {
+    case 0:
+      renderOrganism = "death";
+      break;
     case 1:
       renderOrganism = "color-1";
       break;
@@ -35,11 +38,9 @@ const Dot: FC<props> = ({ organism, x, y, godMode }) => {
     case 8:
       renderOrganism = "color-8";
       break;
-    case 9:
-      renderOrganism = "color-9";
-      break;
+
     default:
-      renderOrganism = "death cell";
+      renderOrganism = "color-9";
   }
   return (
     <div
